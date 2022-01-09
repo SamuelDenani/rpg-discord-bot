@@ -1,0 +1,1 @@
+export { PingCommandFactory } from './Ping';

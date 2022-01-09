@@ -1,0 +1,34 @@
+{
+  "name": "discord-bot-template",
+  "version": "1.0.0",
+  "description": "With this template you can build bots for Discord servers using Functional Programming and Factory design pattern..",
+  "main": "src/main.ts",
+  "author": "Samuel Denani",
+  "license": "MIT",
+  "pre-commit": "lint",
+  "scripts": {
+    "dev": "tsnd --transpile-only --rs src/main.ts",
+    "start": "ts-node src/main.ts",
+    "lint:fix": "eslint ./src --ext .ts --quiet --fix --ignore-path ./.gitignore",
+    "lint:format": "prettier --loglevel warn --write \"./**/*.{ts,md,json}\" ",
+    "lint": "yarn lint:format && yarn lint:fix "
+  },
+  "dependencies": {
+    "discord.js": "^13.4.0",
+    "fs": "^0.0.1-security",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.4",
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.5.1",
+    "ts-node-dev": "^1.1.8"
+  }
+}
